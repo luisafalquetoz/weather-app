@@ -36,31 +36,45 @@ Este projeto é uma aplicação web simples que mostra a **previsão do tempo em
 ```bash
 git clone https://github.com/seu-usuario/weather-app.git
 cd weather-app
+```
 
 ---
 
-📦 2. Configurar o backend
+## 🚀 Como rodar o projeto localmente
+
+### 📦 2. Configurar o backend
 
 ```bash
 cd backend
 npm install
+```
 
 Crie um arquivo .env com sua chave da API:
+```bash
 OPENWEATHER_API_KEY=coloque_sua_chave_aqui
+```
 
 Inicie o servidor:
+```bash
 node index.js
+```
 O backend estará rodando em: http://localhost:3000
 
-🌐 3. Abrir o front-end
+---
+
+### 🌐 3. Abrir o front-end
 Abra o arquivo frontend/index.html no navegador.
 
 O script.js está configurado para consumir o backend local (porta 3000).
 
-🔐 Proteção da API
+---
+
+## 🔐 Proteção da API
 Neste projeto, a chave da API é armazenada no backend, impedindo o acesso direto no front-end e evitando abusos ou vazamentos.
 
-📌 Observações
+---
+
+## 📌 Observações
 O autocomplete usa a API de geocodificação direta da OpenWeatherMap.
 
 O projeto pode ser adaptado para exibir mais dados (vento, sensação térmica, previsão por hora etc).
